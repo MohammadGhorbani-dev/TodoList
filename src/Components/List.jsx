@@ -42,10 +42,10 @@ export default function List() {
         list.map((item, index) => {
           const isEditing = index === editIndex;
           return (
-            <div key={index} className="flex m-auto justify-between">
+            <div key={index} className="flex m-auto">
               {isEditing ? (
                 <div
-                  className={`text-white items-center h-fit py-2.5 px-4 bg-opacity-20 bg-violet-950 rounded-2xl my-4 min-w-[19rem] max-w-[19rem] break-words shadow-xl`}
+                  className={`text-white items-center h-fit py-2.5 px-4 bg-opacity-20 bg-violet-950 rounded-2xl my-4 min-w-[15rem] max-w-[19rem] break-words shadow-xl`}
                 >
                   <input
                     type="text"
@@ -58,7 +58,7 @@ export default function List() {
                 </div>
               ) : (
                 <div
-                  className={`text-white items-center h-fit py-2.5  bg-opacity-20 bg-violet-950 rounded-2xl my-4 px-4 min-w-[19rem] max-w-[19rem] break-words shadow-xl`}
+                  className={`text-white items-center h-fit py-2.5  bg-opacity-20 bg-violet-950 rounded-2xl my-4 px-4 min-w-[15rem] max-w-[19rem] break-words shadow-xl`}
                   dir={getDirection(item)}
                 >
                   {item}
